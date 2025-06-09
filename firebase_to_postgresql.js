@@ -3,20 +3,13 @@ const { getDatabase, ref, get, child } = require("firebase/database");
 const { Client } = require("pg");
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCciV3sOwkss506-379tA5SanyezujbYNA",
-  authDomain: "ans-dishalearning.firebaseapp.com",
-  databaseURL: "https://ans-dishalearning-default-rtdb.firebaseio.com", 
-  projectId: "ans-dishalearning",
-  storageBucket: "ans-dishalearning.firebasebasestorage.app",
-  messagingSenderId: "82099435116",
-  appId: "1:82099435116:web:f4f39e49e614a93968ca49",
-  measurementId: "G-L2JJWD8DNT",
+    //
 };
 
 const app = initializeApp(firebaseConfig);
 const db = getDatabase(app);
 
-const client = new Client('postgresql://neondb_owner:npg_nSGxKZ46XYhT@ep-tight-frog-a9q7deu0-pooler.gwc.azure.neon.tech/neondb?sslmode=require');
+const client = new Client("//");
 
 init();
 
